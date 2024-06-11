@@ -16,7 +16,7 @@ torch.manual_seed(configs.test_seed)
 np.random.seed(configs.test_seed)
 random.seed(configs.test_seed)
 test_num = 200
-device = torch.device('cpu')
+device = torch.device('cuda')
 torch.set_num_threads(1)
 
 def create_test(test_env_settings, num_test_cases):
